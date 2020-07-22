@@ -21,7 +21,7 @@ before_install:
 install:
     - cargo test
     - cargo build --release
-    - cp target/release/closeany "target/release/closeany-linux-amd64
+    - cp target/release/closeany target/release/closeany-linux-amd64
 
 deploy:
   provider: releases
