@@ -12,7 +12,7 @@ mod tests {
     #[test]
     fn test_ptrace_do_init() {
         unsafe {
-            let p = ptrace_do_init(0);
+            ptrace_do_init(0);
         }
     }
 
