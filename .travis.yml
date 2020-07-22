@@ -28,5 +28,3 @@ deploy:
   api_key: "$GH_TOKEN"
   file: "target/release/closeany-linux-amd64"
   skip_cleanup: true
-  on:
-    tags: true
