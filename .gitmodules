@@ -1,0 +1,3 @@
+[submodule "src/ptrace_do"]
+	path = src/ptrace_do
+	url = https://github.com/emptymonkey/ptrace_do.git

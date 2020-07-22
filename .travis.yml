@@ -1,0 +1,15 @@
+language: rust
+sudo: true
+os: linux
+dist: focal
+arch:
+    - amd64
+rust:
+  - stable
+  - beta
+  - nightly
+jobs:
+  fast_finish: true
+script:
+    apt-get install clang-format clang-tidy clang-tools clang clangd libc++-dev libc++1 libc++abi-dev libc++abi1 libclang-dev libclang1 liblldb-dev libllvm-ocaml-dev libomp-dev libomp5 lld lldb llvm-dev llvm-runtime llvm python-clang
+    cargo test
