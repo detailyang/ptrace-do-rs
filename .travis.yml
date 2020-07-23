@@ -11,17 +11,10 @@ rust:
 jobs:
   fast_finish: true
 
-before_install:
-    # 10
-    #- echo  "deb http://apt.llvm.org/focal/ llvm-toolchain-focal-10 main" >> /etc/apt/sources.list
-    #- echo "deb-src http://apt.llvm.org/focal/ llvm-toolchain-focal-10 main" >> /etc/apt/sources.list
-    #- sudo apt-get update
-    #- sudo apt-get install clang-format clang-tidy clang-tools clang clangd libc++-dev libc++1 libc++abi-dev libc++abi1 libclang-dev libclang1 liblldb-dev libllvm-ocaml-dev libomp-dev libomp5 lld lldb llvm-dev llvm-runtime llvm python-clang
-
 install:
     - cargo test
     - cargo build --release
-    - cp target/release/closeany "target/release/closeany-linux-amd64
+    - cp target/release/closeany target/release/closeany-linux-amd64
 
 deploy:
   provider: releases
