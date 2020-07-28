@@ -3,7 +3,7 @@
     <span style="font-size:larger;">ptrace-do-rs</span>
   </b>
   <br />
-   <a href="https://travis-ci.org/detailyang/ptrace-do-rs"><img src="https://travis-ci.org/detailyang/ptrace-do-rs.svg?branch=master" /></a>
+   <a href="https://travis-ci.com/detailyang/ptrace-do-rs"><img src="https://travis-ci.com/detailyang/ptrace-do-rs.svg?branch=master" /></a>
    <a href="https://ci.appveyor.com/project/detailyang/ptrace-do-rs"><img src="https://ci.appveyor.com/api/projects/status/drc2xk4kcoiydr0x?svg=true" /></a>
    <br />
    <b>ptrace-do-rs is rust bindings for libptrace-do</b>

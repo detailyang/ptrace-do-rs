@@ -3,6 +3,7 @@ name = "ptrace-do-rs"
 version = "0.1.0"
 authors = ["detailyang <detailyang@gmail.com>"]
 edition = "2018"
+description = "ptrace-do-rs is rust bindings for libptrace-do"
 
 [[bin]]
 name = "closeany"
