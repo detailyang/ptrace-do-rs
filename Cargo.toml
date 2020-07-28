@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["detailyang <detailyang@gmail.com>"]
 edition = "2018"
 description = "ptrace-do-rs is rust bindings for libptrace-do"
+license-file = "LICENSE"
 
 [[bin]]
 name = "closeany"
