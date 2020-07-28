@@ -1,0 +1,26 @@
+[package]
+name = "ptrace-do-rs"
+version = "0.1.0"
+authors = ["detailyang <detailyang@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "closeany"
+path = "examples/closeany/src/main.rs"
+
+[badges]
+appveyor = { repository = "detailyang/ptrace-do-rs" }
+travis-ci = { repository = "detailyang/ptrace-do-rs" }
+codecov = { repository = "detailyang/ptrace-do-rs" }
+is-it-maintained-issue-resolution = { repository = "detailyang/ptrace-do-rs" }
+is-it-maintained-open-issues = { repository = "detailyang/ptrace-do-rs" }
+maintenance = { status = "actively-developed" }
+
+[build-dependencies]
+bindgen = "0.53.1"
+cc = "1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+getopts = "0.2"
