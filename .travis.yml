@@ -15,7 +15,7 @@ compiler:
   - musl-gcc
 install:
   - rustup target add x86_64-unknown-linux-musl
-  - apt-get install -y musl-gcc musl
+  - sudo apt-get install -y musl-gcc musl
   - cargo test
   - cargo build --release --target x86_64-unknown-linux-musl
   - cp target/release/closeany target/release/closeany-linux-amd64
