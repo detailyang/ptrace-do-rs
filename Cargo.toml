@@ -20,6 +20,9 @@ is-it-maintained-issue-resolution = { repository = "detailyang/ptrace-do-rs" }
 is-it-maintained-open-issues = { repository = "detailyang/ptrace-do-rs" }
 maintenance = { status = "actively-developed" }
 
+[build]
+rustflags = ["-C target-feature=+crt-static"]
+
 [build-dependencies]
 bindgen = "0.53.1"
 cc = "1.0"
