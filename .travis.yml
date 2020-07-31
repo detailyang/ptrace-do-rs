@@ -12,8 +12,9 @@ jobs:
   fast_finish: true
 
 install:
+    - rustup target add x86_64-unknown-linux-musl
     - cargo test
-    - cargo build --release --target x86_64-unknown-linux-musl
+    - cargo build --release
     - cp target/release/closeany target/release/closeany-linux-amd64
 
 deploy:

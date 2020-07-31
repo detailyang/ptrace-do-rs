@@ -3,6 +3,10 @@ name = "ptrace-do-rs"
 version = "0.1.0"
 authors = ["detailyang <detailyang@gmail.com>"]
 edition = "2018"
+description = "ptrace-do-rs is rust bindings for libptrace-do"
+license-file = "LICENSE"
+repository = "https://github.com/detailyang/ptrace-do-rs"
+readme = "README.md"
 
 [[bin]]
 name = "closeany"
@@ -16,14 +20,14 @@ is-it-maintained-issue-resolution = { repository = "detailyang/ptrace-do-rs" }
 is-it-maintained-open-issues = { repository = "detailyang/ptrace-do-rs" }
 maintenance = { status = "actively-developed" }
 
+[build]
+rustflags = ["-C target-feature=+crt-static"]
+
 [build-dependencies]
 bindgen = "0.53.1"
 cc = "1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[build]
-rustflags = ["-C target-feature=+crt-static"]
 
 [dependencies]
 getopts = "0.2"
